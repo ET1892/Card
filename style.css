@@ -83,6 +83,18 @@ html, body {
   }
 
 
+a, a:link, a:visited, a:hover, a:active,
+.phone, .top-left {
+  color: inherit;
+  text-decoration: none;
+}
+
+meta[name="format-detection"] {
+  content: "telephone=no";
+}
+
+
+
   @media (max-width: 320px) {
     .top-left, .top-right .company, .top-right .department, .footer 
     {

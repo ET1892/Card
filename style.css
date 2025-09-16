@@ -1,0 +1,80 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f0f0d9;
+
+  background-image: 
+    radial-gradient(circle, rgba(0,0,0,0.02) 1px, transparent 1px),
+    radial-gradient(circle, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 5px 5px;
+
+  color: #1d1d1f;
+}
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .name {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: normal;
+  }
+
+  .title {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-top: 0.3rem;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 500;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+    text-align: right;
+  }
+
+  .top-right .company {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 500;
+  }
+
+  .top-right .department {
+    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    letter-spacing: 0.75px;
+  }
+
+
+  @media (max-width: 320px) {
+    .top-left, .top-right .company, .top-right .department, .footer 
+    {
+      font-size: 0.8rem;
+    }
+  }

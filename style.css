@@ -11,7 +11,8 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Garamond Classico SC', serif;
-  background-color: #f0f0d9;
+  background-color: #E0DAC6;
+
 
   background-image: 
     radial-gradient(circle, rgba(0,0,0,0.02) 1px, transparent 1px),
@@ -49,7 +50,7 @@ html, body {
     position: absolute;
     top: 3rem;
     left: 2rem;
-    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    font-size: clamp(1rem, 2vw, 1.75rem);
     font-weight: 600;
     letter-spacing: 0.8px;
   }
@@ -62,13 +63,13 @@ html, body {
   }
 
   .top-right .company {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.9rem, 2vw, 1.5rem);
     font-weight: 600;
     letter-spacing: 1.5px;
   }
 
   .top-right .department {
-    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
     letter-spacing: 0.5px;
     font-weight: 600;
   }
@@ -78,9 +79,24 @@ html, body {
     bottom: 1rem;
     width: 100%;
     text-align: center;
-    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-size: clamp(0.6rem, 1.5vw, 1rem);
     letter-spacing: 0.75px;
   }
+
+
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-link:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  
 
 
 a, a:link, a:visited, a:hover, a:active,

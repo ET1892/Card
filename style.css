@@ -43,7 +43,8 @@ html, body {
     top: 3rem;
     left: 2rem;
     font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.8px;
   }
 
   .top-right {
@@ -55,11 +56,13 @@ html, body {
 
   .top-right .company {
     font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.8px;
   }
 
   .top-right .department {
-    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+    font-size: clamp(0.7rem, 1.5vw, 0.95rem);
+    letter-spacing: 0.5px;
   }
 
   .footer {
